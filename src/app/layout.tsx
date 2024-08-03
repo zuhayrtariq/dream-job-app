@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import '@radix-ui/themes/styles.css';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
       
       </body>
       <SpeedInsights/>
+      <Analytics/>
     </html>
   );
 }
