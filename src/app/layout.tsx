@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import '@radix-ui/themes/styles.css';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +24,9 @@ export default function RootLayout({
         <footer className="container py-8 text-gray-600">
           Dream Job App &copy; 2024 - All rights reserved
         </footer>
+      
       </body>
+      <SpeedInsights/>
     </html>
   );
 }
